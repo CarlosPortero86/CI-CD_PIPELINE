@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" modified="2024-06-09T23:35:22.620Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="PD0Ph3vte41o9M8k743p" version="24.5.2" type="device">
+  <diagram name="Página-1" id="6m9-xC29GbS-CIGxyUIV">
+    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rzdaA9iNHV5khvHHixV3-1" value="[CI Pipeline]&#xa;  |&#xa;  v&#xa;[Checkout] --&gt; [Install Dependencies] --&gt; [Run Unit Tests] --&gt; [Build Application] --&gt; [Upload Artifact] --&gt; [Create Release] --&gt; [Upload Artifact to Release]&#xa;                                                                               |&#xa;                                                                               v&#xa;                                                                     [Manual Approval]&#xa;                                                                               |&#xa;                                                                               v&#xa;                                                                            [CD Pipeline]&#xa;                                                                               |&#xa;                                                                               v&#xa;                                                                      [Checkout Release] --&gt; [Deploy to Test Environment]" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="780" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-2" target="rzdaA9iNHV5khvHHixV3-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-2" target="rzdaA9iNHV5khvHHixV3-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-2" value="CI/CD Pipiline" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-1" target="rzdaA9iNHV5khvHHixV3-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-7" target="rzdaA9iNHV5khvHHixV3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-7" value="&lt;strong&gt;Checkout&lt;/strong&gt;:&lt;br&gt;Puxe o código fonte do repositório" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-9" target="rzdaA9iNHV5khvHHixV3-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-9" value="&lt;strong&gt;Install Dependencies&lt;/strong&gt;: Instale as dependências do projeto" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="480" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-11" target="rzdaA9iNHV5khvHHixV3-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-11" value="&lt;strong&gt;Run Unit Tests&lt;/strong&gt;: Execute os testes unitários" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-14" target="rzdaA9iNHV5khvHHixV3-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-14" target="rzdaA9iNHV5khvHHixV3-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-14" value="&lt;strong&gt;Build Application&lt;/strong&gt;: Construa a aplicação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="rzdaA9iNHV5khvHHixV3-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="680" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-18" target="rzdaA9iNHV5khvHHixV3-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-18" value="CD Pipeline" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-20" target="rzdaA9iNHV5khvHHixV3-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-20" value="&lt;strong&gt;Checkout&lt;/strong&gt;: Puxe o código fonte da release." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-22" value="&lt;strong&gt;Deploy to Test Environment&lt;/strong&gt;: Faça o deploy para o ambiente de teste." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-24" target="rzdaA9iNHV5khvHHixV3-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-24" value="&lt;strong&gt;Upload Artifact&lt;/strong&gt;: Faça o upload do artefato gerado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rzdaA9iNHV5khvHHixV3-26" target="rzdaA9iNHV5khvHHixV3-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-26" value="&lt;strong&gt;Create Release&lt;/strong&gt;: Crie uma nova release" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-28" value="&lt;strong&gt;Upload Artifact to Release&lt;/strong&gt;: Faça o upload do artefato para a release criada" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rzdaA9iNHV5khvHHixV3-39" value="Manual Approval" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
