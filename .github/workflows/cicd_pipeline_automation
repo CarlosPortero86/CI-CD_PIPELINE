@@ -37,7 +37,8 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: build-artifact
-        path: build/ # Ajuste conforme o caminho do seu build
+        path: build/ 
+        # Ajuste conforme o caminho do seu build
 
     - name: Create GitHub release
       id: create_release
