@@ -21,7 +21,8 @@ jobs:
     - name: Linter Check
       uses: ./.github/actions/linter
       with:
-        required-file: 'path/to/required/file' # Ajuste conforme necessário
+        required-file: 'path/to/required/file' 
+        # Ajuste conforme necessário
 
     - name: Install dependencies
       run: npm install
@@ -66,7 +67,8 @@ jobs:
       name: test
       url: https://your-test-environment-url.com
       reviewers:
-        - CarlosPortero86 # Substitua pelo seu usuário ou grupo do GitHub
+        - CarlosPortero86 
+        # Substitua pelo seu usuário ou grupo do GitHub
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -88,8 +90,8 @@ jobs:
         username: ${{ secrets.SMTP_USERNAME }}
         password: ${{ secrets.SMTP_PASSWORD }}
         subject: CI/CD Pipeline Failed
-        to: developer@example.com
-        from: ci-cd-pipeline@example.com
+        to: sandro_sdp@yahoo.com.br
+        from: sandro_sdp@yahoo.com.br
         body: |
           The CI/CD pipeline failed at job: ${{ job.name }}
           Please check the logs for more details.
