@@ -1,0 +1,9 @@
+name: 'Validate Lint'
+description: 'Validate if linter passes'
+inputs:
+  path:
+    description: 'Path to the code'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
